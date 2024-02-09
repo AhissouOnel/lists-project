@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(130deg, lightblue, blue);
+}
+
+#app {
+  max-width: 580px;
+  width: 100%;
+  min-height: 300px;
+  max-height: 500px;
+  overflow: auto;
+  background-color: white;
+  border-radius: 7px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 5px 10px -2px rgb(0, 0, 0, 0.7);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.header h2 {
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.header i {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, lightblue, blue);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.editor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  gap: 5px;
+}
+.editor input {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: transparent;
+  background-color: #efefef;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: inset 2px 5px 10px -2px rgb(0, 0, 0, 0.2);
+  outline: none;
+  font-size: 1rem;
+}
+.editor button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(to right, lightblue, blue);
+  color: white;
+  transition: ease-in-out 3ms;
+  cursor: pointer;
+  box-shadow: 2px 5px 10px -2px rgb(0, 0, 0, 0.2);
+}
+button:hover {
+  scale: 1.05;
+}
+
+.none {
+  display: none;
+}
+.showEdit {
+  margin-left: 20px;
+}
+.showEdit li {
+  font-size: 1rem;
+  list-style: none;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.showEdit li span{
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.update{
+  position: absolute;
+  right: 70px;
+  padding: 5px;
+  width: 60px;
+  height: 35px;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  background-color: green;
+  box-shadow: 2px 5px 10px -2px rgb(0, 0, 0, 0.2);
+}
+.accept{
+  position: absolute;
+  right: 70px;
+  padding: 5px;
+  width: 60px;
+  height: 35px;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  background-color: blue;
+  box-shadow: 2px 5px 10px -2px rgb(0, 0, 0, 0.2);
+}
+.delete{
+  position: absolute;
+  right: 5px;
+  padding: 5px;
+  width: 60px;
+  height: 35px;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  box-shadow: 2px 5px 10px -2px rgb(0, 0, 0, 0.2);
+}
+.unchecked{
+  position: absolute;
+  left: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.checked{
+  display: none;
+  position: absolute;
+  left: 7px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: green;
+  cursor: pointer;
+}
+.input{
+  width: 390px;
+  height: 35px;
+  border-radius: 10px;
+  border: transparent;
+  background-color: #efefef;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: inset 2px 5px 10px -2px rgb(0, 0, 0, 0.2);
+  outline: none;
+  font-size: 0.9rem;
+}
